@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Bites Restaurant</title>
+    <style>
+        /* Fresh fruit color palette */
+        :root {
+            --orange: #ff1e00c9;
+            --lime: #32CD32;
+            --strawberry: #FF3030;
+            --blueberry: #4169E1;
+            --background: #FFF5E6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--orange);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: lime;
+        }
+
+        .hero {
+            height: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/026/721/946/non_2x/illustration-of-indian-national-food-view-from-above-generative-ai-free-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            opacity: 0.9;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: whitesmoke;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: var(--strawberry);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--blueberry);
+        }
+
+        .featured-dishes {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .dish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .dish-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .dish-info {
+            padding: 1rem;
+        }
+
+        .dish-info h3 {
+            margin: 0 0 0.5rem 0;
+        }
+
+        footer {
+            background-color: var(--orange);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1> Fresh Bites</h1>
+                <p>Experience culinary delight with our farm-fresh ingredients</p>
+                <a href="menu.html" class="cta-button">View Our Menu</a>
+            </div>
+        </section>
+
+        <section class="featured-dishes">
+            <h2>Our Featured Dishes</h2>
+            <div class="dish-grid">
+                <div class="dish-card">
+                    <img src="https://www.recipetineats.com/uploads/2021/08/Garden-Salad_47.jpg" alt="Fresh Salad">
+                    <div class="dish-info">
+                        <h3>Garden Fresh Salad</h3>
+                        <p>A mix of seasonal vegetables with our signature dressing</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/05/Pasta-alla-norma-87c54fc.jpg?quality=90&resize=556,505" alt="Pasta Dish">
+                    <div class="dish-info">
+                        <h3>Creamy Pesto Pasta</h3>
+                        <p>Al dente pasta tossed in a rich, homemade pesto sauce</p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/96/98/27/1000_F_196982795_WhajGRwX2KDpmnYlGS3ZL5tSyCRftfEG.jpg" alt="Grilled Steak">
+                    <div class="dish-info">
+                        <h3> Ramen Noodles</h3>
+                        <p>Perfectly seared noodels served with roasted vegetables</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fresh Bites Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

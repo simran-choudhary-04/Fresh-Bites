@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Fresh Bites Restaurant</title>
+    <style>
+        :root {
+            --orange: #ff0000c5;
+            --lime: #32CD32;
+            --strawberry: #FF3030;
+            --blueberry: #4169E1;
+            --background: #FFF5E6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--orange);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--lime);
+        }
+
+        main {
+            padding: 80px 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--strawberry);
+        }
+
+        .menu-section {
+            margin-bottom: 2rem;
+        }
+
+        .menu-section h2 {
+            color: var(--blueberry);
+            border-bottom: 2px solid var(--blueberry);
+            padding-bottom: 0.5rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-info {
+            padding: 1rem;
+        }
+
+        .menu-item-info h3 {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .menu-item-info p {
+            margin: 0 0 1rem 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--strawberry);
+        }
+
+        .add-to-cart {
+            background-color: var(--lime);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: var(--blueberry);
+        }
+
+        .order-now {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            background-color: var(--strawberry);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-now:hover {
+            background-color: var(--blueberry);
+        }
+
+        footer {
+            background-color: var(--orange);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Menu</h1>
+
+        <section class="menu-section">
+            <h2>Chinese</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://st4.depositphotos.com/1105977/25584/i/450/depositphotos_255841950-stock-photo-top-view-composition-of-fried.jpg" alt="Noodles">
+                    <div class="menu-item-info">
+                        <h3>Noodles</h3>
+                        <p>Nourish noodles topped with fresh tomatoes, garlic, and basil</p>
+                        <p class="price">Rs. 80/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://rakskitchen.net/wp-content/uploads/2016/05/Crispy-okra-in-hot-garlic-500x500.jpg" alt="Crispy Veg">
+                    <div class="menu-item-info">
+                        <h3>Crispy Veg</h3>
+                        <p>Lightly crisy served with marinara sauce and veggies</p>
+                        <p class="price">Rs. 75/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://i.ytimg.com/vi/cQh1HKxhRe0/maxresdefault.jpg" alt="Gravy Paneer">
+                    <div class="menu-item-info">
+                        <h3>Gravy Paneer</h3>
+                        <p>Gravy served with roasted vegetables and mashed paneer</p>
+                        <p class="price">Rs. 110/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-mix-veg-recipe.jpg" alt="Mix Veg">
+                    <div class="menu-item-info">
+                        <h3>Mix Veg</h3>
+                        <p>Fresh veggies fillet with lemon, butter  and cream</p>
+                        <p class="price">Rs. 100/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://www.countrycrock.com/en-us/-/media/Project/Upfield/Brands/Country-Crock/Country-Crock/Assets/Recipes/sync-images/e9b96673-a7df-4f56-9983-de0e244ea2b7.jpg?rev=6e163ddf5c32459f84c87a4ac2071ade" alt="Choco lava cake">
+                    <div class="menu-item-info">
+                        <h3>Choco Lava Cake</h3>
+                        <p>Chocolaty cake with a graham cracker crust</p>
+                        <p class="price">Rs. 50/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/11/gulab-jamun.jpg" alt="Gulab Jamun">
+                    <div class="menu-item-info">
+                        <h3>Gulab Jamun</h3>
+                        <p>Indian sweet-flavored dessert with dry fruit toppings</p>
+                        <p class="price">Rs. 60/-</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="cart.html" class="order-now">Order Now</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fresh Bites Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const menuItem = this.closest('.menu-item');
+                const itemName = menuItem.querySelector('h3').textContent;
+                const itemPrice = menuItem.querySelector('.price').textContent;
+                alert(`Added to cart: ${itemName} - ${itemPrice}`);
+                // In a real application, you would update the cart state here
+            });
+        });
+    </script>
+</body>
+</html>

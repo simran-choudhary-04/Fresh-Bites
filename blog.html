@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Bites - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background);
+        }
+        header {
+            background-color: rgba(255, 0, 0, 0.797);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: lime;
+        }
+
+        footer {
+            margin-top: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mx-auto mt-10">
+        <h2 class="text-3xl font-bold mb-6 text-center"><br>Customer Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.freepik.com/premium-vector/girls-icon-hand-draw-black-colour-woman-day-logo-vector-element-symbol_759541-1626.jpg" alt="Customer" class="rounded-full mr-4" height="100" width="100">
+                    <div>
+                        <h3 class="font-bold">Aarya Sharma</h3>
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">The food was absolutely delicious! I especially loved the pasta dish. The atmosphere was cozy and the staff was very friendly. Will definitely come back!</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <img src="https://st3.depositphotos.com/21309084/37678/v/450/depositphotos_376782074-stock-illustration-black-white-logo-man-black.jpg" alt="Customer" class="rounded-full mr-4" height="100" width="100">
+                    <div>
+                        <h3 class="font-bold">Harsh Malhotra</h3>
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">I had an amazing dining experience at Fresh Bites. The menu offers a great variety of dishes, and everything we tried was fantastic. Highly recommended!</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.freepik.com/premium-vector/black-white-logo-depicting-beautiful-sophisticated-girl-elegant-style-with-sophisticated-sophisticated-look_567294-4348.jpg" alt="Customer" class="rounded-full mr-4" height="100" width="100">
+                    <div>
+                        <h3 class="font-bold">Komal Singh</h3>
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600">Great food and excellent service. The prices are reasonable for the quality you get. The only downside was that it was a bit noisy, but overall a very good experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-red-800 text-white py-4 mt-10 margin-top - 100">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Fresh Bites. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
